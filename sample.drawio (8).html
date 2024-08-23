@@ -21,7 +21,7 @@
                 // Replace placeholders in the entire HTML with the corresponding data
                 $('body').html(function(index, html) {
                     return html
-                        .replace(/VisitRepo/g, '<a href="' + data.link + '" target="_blank">' + 'Click Here' + '</a>')
+                        .replace(/VisitRepo/g, '<a href="http://individual.utoronto.ca' + data.link + '" target="_blank">' + 'Click Here' + '</a>')
                         .replace(/RepoName/g, data.ReopName)
                         .replace(/LastUpdated/g, data.lastUpdated);
                 });
