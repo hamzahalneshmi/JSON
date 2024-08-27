@@ -1,6 +1,6 @@
 function fetchData() {
     $.ajax({
-        url: 'https://raw.githubusercontent.com/hamzahalneshmi/JSON/main/db.json',
+        url: 'https://raw.githubusercontent.com/hamzahalneshmi/JSON/newdesign/db.json',
         method: 'GET',
         dataType: 'json',
         success: function(data) {
