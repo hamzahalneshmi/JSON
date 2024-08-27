@@ -9,6 +9,7 @@ function fetchData() {
                 return html
                     .replace(/VisitRepo/g, '<a href=' + data.link + ' target=_blank>' + 'Click Here' + '</a>')
                     .replace(/RepoName/g, data.ReopName)
+                    .replace(/Details1/g, '<button type=button id=detailsButton class=btn btn-primary data-bs-toggle=modal data-bs-target=#detailsModal>Details</button>')
                     .replace(/LastUpdated/g, data.lastUpdated);
             });
         },
