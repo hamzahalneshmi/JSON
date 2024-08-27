@@ -7,10 +7,20 @@ function fetchData() {
             // Replace placeholders in the entire HTML with the corresponding data
             $('body').html(function(index, html) {
                 return html
-                    .replace(/VisitRepo/g, '<a href=' + data.link + ' target=_blank>' + 'Click Here' + '</a>')
-                    .replace(/RepoName/g, data.ReopName)
+                    .replace(/RepoName/g, data.repository_full_name)
                     .replace(/Details1/g, '<button type=button id=detailsButton class=btn btn-primary data-bs-toggle=modal data-bs-target=#detailsModal>Details</button>')
-                    .replace(/LastUpdated/g, data.lastUpdated);
+                    .replace(/LastUpdated/g, new Date(data.started_at).toLocaleString())
+                    .replace(/Status1/g, data.status);
+            });
+            // Update modal with JSON data when button is clicked
+            $('#detailsButton').on('click', function() {
+                $('#workflowJobId').text(data.workflow_job_id);
+                $('#workflowName').text(data.workflow_name);
+                $('#headBranch').text(data.head_branch);
+                $('#status').text(data.status);
+                $('#repositoryFullName').text(data.repository_full_name);
+                $('#startedAt').text(new Date(data.started_at).toLocaleString());
+                $('#htmlUrl').attr('href', data.html_url);
             });
         },
         error: function() {

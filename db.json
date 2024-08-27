@@ -1,7 +1,4 @@
 {
-  "ReopName": "Provisioner Release k95000",
-  "lastUpdated": "7 mins",
-  "link": "http://individual.utoronto.ca/ank_home/youclickedthis.html",
   "workflow_job_id": 29174443212,
   "workflow_name": "Post merge",
   "head_branch": "main",

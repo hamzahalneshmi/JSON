@@ -18,3 +18,11 @@ LastUpdated
 
 
 py -m http.server
+
+
+
+
+
+
+
+.replace(/VisitRepo/g, '<a href=' + data.link + ' target=_blank>' + 'Click Here' + '</a>')
