@@ -11,5 +11,9 @@
   "repository_id": 810685646,
   "repository_name": "sapper-gcp-foundation-iam",
   "repository_full_name": "E-Test-Org/sapper-gcp-foundation-iam",
-  "sender_login": "valeriy-bezrukov_ericsson"
+  "sender_login": "valeriy-bezrukov_ericsson",
+  "version1": "ORC 1.0.1",
+  "version2": "InB 1.9.1",
+  "version3": "DePCI 1.6.8",
+  "version4": "InB 1.11.4"
 }
